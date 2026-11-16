@@ -1,6 +1,6 @@
 {
   "name": "game-clock",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "title": "Game clock",
   "description": "Decision timers and level timers as pure functions over an injected now(): two clocks the caller runs or stops, deadlines on them, timeout actions, and client countdowns for web, Apple and Android.",
   "facilities": [
@@ -38,10 +38,10 @@
   ],
   "dependencies": [],
   "platforms": [
-    "server",
-    "web",
+    "android",
     "apple",
-    "android"
+    "server",
+    "web"
   ],
   "tools": {
     "node": "26.5.0",
@@ -123,5 +123,157 @@
       }
     ],
     "notes": "Pure library; no provider limits apply. The host's alarm facility (for example a durable object alarm) is chosen by the server-host job, not here."
+  },
+  "classes": [
+    {
+      "reference": {
+        "name": "ourapps-ae/game-clock-class",
+        "version": "1.0.0",
+        "digest": "79a45a921bd4a79695249dccdc6a45cc670ff4a16e73fb87ba1738e1caff9b2f"
+      },
+      "descriptor": {
+        "format": 1,
+        "name": "ourapps-ae/game-clock-class",
+        "version": "1.0.0",
+        "provides": [
+          {
+            "type": "ae/game-clock",
+            "version": "1.0.0",
+            "path": "classes/game-clock-class/game-clock.json",
+            "modules": {
+              "web": [
+                "web/index.ts"
+              ],
+              "server": [
+                "server/index.ts"
+              ],
+              "android": [
+                "android/src/main/java"
+              ],
+              "ios": [
+                "apple/Sources"
+              ],
+              "macos": [
+                "apple/Sources"
+              ],
+              "tvos": [
+                "apple/Sources"
+              ],
+              "windows": [
+                "web/index.ts"
+              ]
+            }
+          }
+        ],
+        "requires": [],
+        "settings": {
+          "type": "object",
+          "properties": {
+            "decisionSeconds": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "decisionSeconds"
+          ],
+          "additionalProperties": false
+        },
+        "inventory": [
+          {
+            "path": "classes/game-clock-class/check.mjs",
+            "digest": "0b4a1f046145d74776416ee9eb3a4008e0365401e410f76d1844a8027f1eafcd"
+          },
+          {
+            "path": "classes/game-clock-class/game-clock.json",
+            "digest": "d1a3ea6cded9e6845ffa5ef4a9bfbf47fc77279b9b72fd1974437db1942c1956"
+          },
+          {
+            "path": "classes/game-clock-class/runtime.mjs",
+            "digest": "7440f3891614c423f74668cb5a2445fea58bbfa4d7c740c8e8a855d1d9300d43"
+          }
+        ],
+        "verification": [
+          {
+            "id": "shared",
+            "root": "package",
+            "argv": [
+              "node",
+              "classes/game-clock-class/check.mjs"
+            ],
+            "cwd": ".",
+            "prepare": [],
+            "tools": {
+              "node": "26.5"
+            },
+            "fixtures": [
+              "classes/game-clock-class/check.mjs"
+            ],
+            "locks": [],
+            "network": false,
+            "timeoutSeconds": 60,
+            "expectedExit": 0,
+            "scope": "required-local",
+            "requirements": []
+          }
+        ]
+      }
+    }
+  ],
+  "implements": [
+    {
+      "name": "ourapps-ae/game-clock-class",
+      "version": "1.0.0",
+      "digest": "79a45a921bd4a79695249dccdc6a45cc670ff4a16e73fb87ba1738e1caff9b2f"
+    }
+  ],
+  "upstream": [],
+  "compatibility": {
+    "runtimes": {
+      "node": ">=26.5.0 <27.0.0",
+      "swift": "=6.4.2",
+      "ios": ">=17.0.0",
+      "macos": ">=14.0.0",
+      "tvos": ">=17.0.0",
+      "kotlin": "=2.3.20",
+      "java": ">=17.0.0 <27.0.0",
+      "android": ">=8.0.0"
+    },
+    "frameworks": {},
+    "dependencies": [],
+    "styles": {
+      "scope": "none",
+      "namespaces": [],
+      "conflicts": []
+    }
+  },
+  "maintenance": {
+    "owners": [
+      "Level N Ltd"
+    ],
+    "contact": "https://github.com/ourapps-ae/game-clock/issues",
+    "repository": "https://github.com/ourapps-ae/game-clock",
+    "updates": {
+      "source": "https://github.com/ourapps-ae/game-clock/releases",
+      "strategy": "manual"
+    }
+  },
+  "supportedPlatforms": [
+    "android",
+    "ios",
+    "macos",
+    "server",
+    "tvos",
+    "web",
+    "windows"
+  ],
+  "licence": "Apache-2.0",
+  "licenceFile": "LICENCE",
+  "noticeFile": "NOTICE",
+  "templates": [],
+  "modules": {
+    "web": "web/index.ts",
+    "server": "server/index.ts",
+    "android": "android/src/main/java",
+    "apple": "apple/Sources"
   }
 }
