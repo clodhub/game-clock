@@ -1,6 +1,6 @@
 {
   "name": "game-clock",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "title": "Game clock",
   "description": "Decision timers and level timers as pure functions over an injected now(): two clocks the caller runs or stops, deadlines on them, timeout actions, and client countdowns for web, Apple and Android.",
   "facilities": [
@@ -128,13 +128,17 @@
     {
       "reference": {
         "name": "ourapps-ae/game-clock-class",
-        "version": "1.0.0",
-        "digest": "79a45a921bd4a79695249dccdc6a45cc670ff4a16e73fb87ba1738e1caff9b2f"
+        "version": "1.1.0",
+        "digest": "315870e4dbb01c2eb065410c05b4b87b8de6871c816e1560fb9642217017be7e"
       },
       "descriptor": {
-        "format": 1,
+        "format": 2,
         "name": "ourapps-ae/game-clock-class",
-        "version": "1.0.0",
+        "version": "1.1.0",
+        "title": "Game clock",
+        "summary": "Decision deadlines and countdowns that pause and expire",
+        "category": "games/turns-and-timing",
+        "presentation": "none",
         "provides": [
           {
             "type": "ae/game-clock",
@@ -222,8 +226,8 @@
   "implements": [
     {
       "name": "ourapps-ae/game-clock-class",
-      "version": "1.0.0",
-      "digest": "79a45a921bd4a79695249dccdc6a45cc670ff4a16e73fb87ba1738e1caff9b2f"
+      "version": "1.1.0",
+      "digest": "315870e4dbb01c2eb065410c05b4b87b8de6871c816e1560fb9642217017be7e"
     }
   ],
   "upstream": [],
@@ -234,7 +238,7 @@
       "ios": ">=17.0.0",
       "macos": ">=14.0.0",
       "tvos": ">=17.0.0",
-      "kotlin": "=2.3.20",
+      "kotlin": "=2.4.21",
       "java": ">=17.0.0 <27.0.0",
       "android": ">=8.0.0"
     },
@@ -509,5 +513,11 @@
         "manual": "Without the package manager, install Node 26 from nodejs.org (the installer, or the zip or tar archive with its folder put first on PATH); on Linux also from the NodeSource repository."
       }
     ]
-  }
+  },
+  "release": {
+    "channel": "features",
+    "fixes": []
+  },
+  "images": [],
+  "vulnerabilityWaivers": []
 }
