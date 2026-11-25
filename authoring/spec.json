@@ -1,6 +1,6 @@
 {
   "name": "game-clock",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "title": "Game clock",
   "description": "Decision timers and level timers as pure functions over an injected now(): two clocks the caller runs or stops, deadlines on them, timeout actions, and client countdowns for web, Apple and Android.",
   "facilities": [
@@ -44,11 +44,11 @@
     "web"
   ],
   "tools": {
-    "node": "26.5.0",
-    "python3": "3.12.8",
-    "swiftc": "6.4.2",
-    "kotlinc": "2.2.0",
-    "java": "26.0.1"
+    "node": "26.5",
+    "python3": "3.12",
+    "swiftc": "6.4",
+    "kotlinc": "2.2",
+    "java": "26.0"
   },
   "suites": [
     {
@@ -68,8 +68,8 @@
       ],
       "scope": "platform",
       "tools": {
-        "python3": "3.12.8",
-        "swiftc": "6.4.2"
+        "python3": "3.12",
+        "swiftc": "6.4"
       },
       "fixtures": [
         "tests/apple/main.swift",
@@ -85,9 +85,9 @@
       ],
       "scope": "platform",
       "tools": {
-        "python3": "3.12.8",
-        "kotlinc": "2.2.0",
-        "java": "26.0.1"
+        "java": "26.0",
+        "kotlinc": "2.2",
+        "python3": "3.12"
       },
       "fixtures": [
         "tests/android/Main.kt",
@@ -127,13 +127,13 @@
   "classes": [
     {
       "reference": {
-        "name": "ourapps-ae/game-clock-class",
+        "name": "clodhub/game-clock-class",
         "version": "1.1.0",
-        "digest": "315870e4dbb01c2eb065410c05b4b87b8de6871c816e1560fb9642217017be7e"
+        "digest": "daa2badc90058187c3be8873aa233e4ef7a8335af62ac5459f0a3cf2e44ec2c8"
       },
       "descriptor": {
         "format": 2,
-        "name": "ourapps-ae/game-clock-class",
+        "name": "clodhub/game-clock-class",
         "version": "1.1.0",
         "title": "Game clock",
         "summary": "Decision deadlines and countdowns that pause and expire",
@@ -189,7 +189,7 @@
           },
           {
             "path": "classes/game-clock-class/game-clock.json",
-            "digest": "d1a3ea6cded9e6845ffa5ef4a9bfbf47fc77279b9b72fd1974437db1942c1956"
+            "digest": "6c78156e8d843e997cc3c146590fc1216556d38c582f24e7a0857ab7a9aa98c9"
           },
           {
             "path": "classes/game-clock-class/runtime.mjs",
@@ -225,9 +225,9 @@
   ],
   "implements": [
     {
-      "name": "ourapps-ae/game-clock-class",
+      "name": "clodhub/game-clock-class",
       "version": "1.1.0",
-      "digest": "315870e4dbb01c2eb065410c05b4b87b8de6871c816e1560fb9642217017be7e"
+      "digest": "daa2badc90058187c3be8873aa233e4ef7a8335af62ac5459f0a3cf2e44ec2c8"
     }
   ],
   "upstream": [],
@@ -254,10 +254,10 @@
     "owners": [
       "Level N Ltd"
     ],
-    "contact": "https://github.com/ourapps-ae/game-clock/issues",
-    "repository": "https://github.com/ourapps-ae/game-clock",
+    "contact": "https://github.com/clodhub/game-clock/issues",
+    "repository": "https://github.com/clodhub/game-clock",
     "updates": {
-      "source": "https://github.com/ourapps-ae/game-clock/releases",
+      "source": "https://github.com/clodhub/game-clock/releases",
       "strategy": "manual"
     }
   },
