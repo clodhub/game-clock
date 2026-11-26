@@ -7,19 +7,19 @@
   "focus": "component",
   "definitions": [
     {
-      "id": "clodhub.game-clock",
+      "id": "com.clodhub.game-clock",
       "name": "Game clock",
       "kind": "component",
       "status": "example",
-      "package": "clodhub/game-clock",
-      "version": "0.10.0",
+      "package": "pkg:clod/com.clodhub/game-clock",
+      "version": "0.11.0",
       "ports": [
         {
           "id": "game-clock",
           "name": "Game clock",
           "direction": "output",
           "kind": "interface",
-          "type": "ae/game-clock",
+          "type": "com.clodhub/game-clock",
           "version": "1.0.0"
         }
       ],
@@ -54,7 +54,7 @@
           "name": "Game clock",
           "direction": "input",
           "kind": "interface",
-          "type": "ae/game-clock",
+          "type": "com.clodhub/game-clock",
           "version": "1.0.0",
           "required": true,
           "cardinality": "one"
@@ -67,7 +67,7 @@
     {
       "id": "component",
       "name": "Game clock",
-      "definition": "clodhub.game-clock",
+      "definition": "com.clodhub.game-clock",
       "configuration": {}
     },
     {

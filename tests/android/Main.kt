@@ -1,5 +1,5 @@
-import ae.clock.formatClock
-import ae.clock.remaining
+import com.clodhub.clock.formatClock
+import com.clodhub.clock.remaining
 import java.io.File
 
 fun main() {

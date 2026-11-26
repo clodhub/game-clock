@@ -14,7 +14,7 @@ The installer collects two settings. `decisionSeconds` is how long a player has 
 ## Artefacts and dependencies
 `component.json` maps every `implementation/` source into `components/game-clock/`:
 
-- `implementation/android/src/main/java/ae/clock/Countdown.kt` -> `components/game-clock/android/src/main/java/ae/clock/Countdown.kt`
+- `implementation/android/src/main/java/com/clodhub/clock/Countdown.kt` -> `components/game-clock/android/src/main/java/com/clodhub/clock/Countdown.kt`
 - `implementation/apple/Sources/Countdown.swift` -> `components/game-clock/apple/Sources/Countdown.swift`
 - `implementation/server/clock.ts` -> `components/game-clock/server/clock.ts`
 - `implementation/web/countdown.ts` -> `components/game-clock/web/countdown.ts`
@@ -23,7 +23,7 @@ Dependencies: none.
 `tools.lock.json` pins verification tools: node 26.5, python3 3.12, swiftc 6.4, kotlinc 2.2, java 26.0. Licence: `Apache-2.0` (`LICENCE`, `NOTICE`).
 
 ## Provided interfaces
-- `interfaces/game-clock.json` defines `game-clock` (ae/game-clock) version 1.0.0: an OpenRPC 1.3.2 document, one method per function (a member of a created object is `<Type>.<member>`), with parameter, result and data types as JSON Schema 2020-12 (`components.schemas`) and thrown errors under `errors`.
+- `interfaces/game-clock.json` defines `game-clock` (com.clodhub/game-clock) version 1.0.0: an OpenRPC 1.3.2 document, one method per function (a member of a created object is `<Type>.<member>`), with parameter, result and data types as JSON Schema 2020-12 (`components.schemas`) and thrown errors under `errors`.
 
 ## Required interfaces
 None.

@@ -1,6 +1,7 @@
 {
   "name": "game-clock",
-  "version": "0.10.0",
+  "version": "0.11.0",
+  "sourceRevision": "19905b75dbea89fbfd424d67fe26c81aaed0e018",
   "title": "Game clock",
   "description": "Decision timers and level timers as pure functions over an injected now(): two clocks the caller runs or stops, deadlines on them, timeout actions, and client countdowns for web, Apple and Android.",
   "facilities": [
@@ -12,7 +13,7 @@
   "provides": [
     {
       "id": "game-clock",
-      "type": "ae/game-clock",
+      "type": "com.clodhub/game-clock",
       "version": "1.0.0",
       "path": "interfaces/game-clock.json"
     }
@@ -127,13 +128,13 @@
   "classes": [
     {
       "reference": {
-        "name": "clodhub/game-clock-class",
+        "name": "pkg:clod/com.clodhub/game-clock-class",
         "version": "1.1.0",
-        "digest": "daa2badc90058187c3be8873aa233e4ef7a8335af62ac5459f0a3cf2e44ec2c8"
+        "digest": "7d7223e09dd99de86b93ad17705ccc24a75e97968d93c4c701075392a4f4938a"
       },
       "descriptor": {
-        "format": 2,
-        "name": "clodhub/game-clock-class",
+        "format": 3,
+        "name": "pkg:clod/com.clodhub/game-clock-class",
         "version": "1.1.0",
         "title": "Game clock",
         "summary": "Decision deadlines and countdowns that pause and expire",
@@ -141,7 +142,7 @@
         "presentation": "none",
         "provides": [
           {
-            "type": "ae/game-clock",
+            "type": "com.clodhub/game-clock",
             "version": "1.0.0",
             "path": "classes/game-clock-class/game-clock.json",
             "modules": {
@@ -189,11 +190,11 @@
           },
           {
             "path": "classes/game-clock-class/game-clock.json",
-            "digest": "6c78156e8d843e997cc3c146590fc1216556d38c582f24e7a0857ab7a9aa98c9"
+            "digest": "920bb632c6647188161f82940325bb314e0b3b0dda5b00bc5e77232466b29617"
           },
           {
             "path": "classes/game-clock-class/runtime.mjs",
-            "digest": "7440f3891614c423f74668cb5a2445fea58bbfa4d7c740c8e8a855d1d9300d43"
+            "digest": "1d85f0dae92d5c6c859cd48a4211a933718ae3e168554a2b00806183c4b661f0"
           }
         ],
         "verification": [
@@ -225,9 +226,9 @@
   ],
   "implements": [
     {
-      "name": "clodhub/game-clock-class",
+      "name": "pkg:clod/com.clodhub/game-clock-class",
       "version": "1.1.0",
-      "digest": "daa2badc90058187c3be8873aa233e4ef7a8335af62ac5459f0a3cf2e44ec2c8"
+      "digest": "7d7223e09dd99de86b93ad17705ccc24a75e97968d93c4c701075392a4f4938a"
     }
   ],
   "upstream": [],

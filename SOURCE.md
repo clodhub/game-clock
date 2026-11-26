@@ -15,7 +15,7 @@ Reference revision: `19905b75dbea89fbfd424d67fe26c81aaed0e018`. Extraction sourc
   - Generalised: no DOM; `now` is passed in; `endsAt` added for a ticking display; a device clock that goes backwards adds no time.
   - Left behind: the DOM element, the `setInterval` ticker (`board.ts:17-21`).
 - `implementation/apple/Sources/Countdown.swift` <- `ios/OurPoker/Sources/TableScreen.swift:3-8` (`remaining(_:viewAt:now:paused:)`). Same function made `public` with the backwards-clock guard; `formatClock` added (the Swift UI formats time inline).
-- `implementation/android/src/main/java/ae/clock/Countdown.kt` <- `android/app/src/main/java/app/ourapps/ourpoker/ui/TableScreen.kt:114-118` (`remaining`). Same, with the guard and `formatClock`. Not compiled here (no kotlinc).
+- `implementation/android/src/main/java/com/clodhub/clock/Countdown.kt` <- `android/app/src/main/java/app/ourapps/ourpoker/ui/TableScreen.kt:114-118` (`remaining`). Same, with the guard and `formatClock`. Not compiled here (no kotlinc).
 - `tests/fixtures/countdown.json`: new; eight countdown rows and nine `m:ss` rows read by all three test suites.
 - `tests/web.test.ts`, `tests/apple/main.swift`, `tests/android/Main.kt`, `tests/native.py`: new (native.py as in `tests/native.py` in `clodhub/store-update`).
 - `examples/consumer.ts`: new; one decision with a timeout and a stopped clock.

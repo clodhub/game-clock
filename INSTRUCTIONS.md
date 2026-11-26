@@ -3,11 +3,11 @@
 ## For the agent
 Select this component for any game with decision time limits or level timers. Set `decisionSeconds` from the recipe's decision time answer (hold'em: 30), and `onTimeout` from the house rules (hold'em: check-or-fold). Connect the provided `game-clock` to the turn engine and to computer-players. Include the web, Apple and Android files only when those client targets are selected.
 
-- Select package `clodhub/game-clock` version `0.10.0`.
+- Select package `pkg:clod/com.clodhub/game-clock` version `0.11.0`.
 - Settings to configure:
   - `decisionSeconds` (integer; optional; default `30`)
   - `onTimeout` (string, slug; optional; default `check-or-fold`)
-- Connect the provided `game-clock` (ae/game-clock 1.0.0) to the consumer that needs it.
+- Connect the provided `game-clock` (com.clodhub/game-clock 1.0.0) to the consumer that needs it.
 - No accounts or keys are needed.
 
 ## For the developer
@@ -19,4 +19,4 @@ From the component directory:
 - `node --test tests/web.test.ts` (web, required-local; tools: node 26.5)
 - `python3 tests/native.py apple` (apple, platform; tools: python3 3.12, swiftc 6.4)
 - `python3 tests/native.py android` (android, platform; tools: python3 3.12, kotlinc 2.2, java 26.0)
-- `python3 -m aepm review <digest> --store STORE --policy POLICY --trusted --allow-network` checks an archive fetched with `python3 -m aepm fetch clodhub/game-clock@VERSION --store STORE --from https://clodhub.com` and runs its suites.
+- `python3 -m clod review <digest> --store STORE --policy POLICY --trusted --allow-network` checks an archive fetched with `python3 -m clod fetch game-clock@VERSION --store STORE --from https://clodhub.com` and runs its suites.

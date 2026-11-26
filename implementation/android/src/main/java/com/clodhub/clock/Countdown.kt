@@ -1,4 +1,4 @@
-package ae.clock
+package com.clodhub.clock
 
 // Time left on a server countdown, from when the view arrived; frozen while the game is paused or held.
 fun remaining(remainingMs: Long?, viewAt: Long, now: Long, paused: Boolean): Long? {
